@@ -8,9 +8,10 @@ pipeline {
                 echo 'not using shell in the Jenkinsfile'
             }
         }
-           stage('test') {
+        stage('test') {
             steps {
                 echo "This stage is stage2"
+                sh 'echo Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
           
             }
         }
