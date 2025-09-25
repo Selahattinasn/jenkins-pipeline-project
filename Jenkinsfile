@@ -3,15 +3,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Compiling the Java source code'
-                sh 'javac Hello.java'
+                echo "Clarusway_Way to Reinvent Yourself"
+                sh 'python3 --version'
+                sh 'python3 pipeline.py'
             }
         }
-        stage('run') {
-            steps {
-                echo 'Running the compiled Java code.'
-                sh 'java Hello'
-            }
-        }
+
     }
 }
